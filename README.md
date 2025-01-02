@@ -25,7 +25,7 @@ Create a basic Microsoft Entra ID setup for an organization to manage identity a
 
        - Once the tenant is created, go back to Manage tenants, select your new tenant, and click Switch.
 
-![img](/Task_1/screenshots/1_1.png)
+![img](/screenshots/1_1.png)
 ---
 
 2. Add at least two users to the directory.
@@ -42,10 +42,10 @@ Create a basic Microsoft Entra ID setup for an organization to manage identity a
           - Password: Auto-generate or provide one manually.
         - Save the user details.
 
-![img](/Task_1/screenshots/1_2_1.png)
-![img](/Task_1/screenshots/1_2_2.png)
-![img](/Task_1/screenshots/1_2_3.png)
-![img](/Task_1/screenshots/1_2_4.png)
+![img](/screenshots/1_2_1.png)
+![img](/screenshots/1_2_2.png)
+![img](/screenshots/1_2_3.png)
+![img](/screenshots/1_2_4.png)
 ---
 
 3. Create two groups named Developers and Admins.
@@ -63,9 +63,9 @@ Create a basic Microsoft Entra ID setup for an organization to manage identity a
    3. Create the Admins Group:
       - Repeat the process to create a second group named Admins.
 
-![img](/Task_1/screenshots/1_3_1.png)
-![img](/Task_1/screenshots/1_3_2.png)
-![img](/Task_1/screenshots/1_3_3.png)
+![img](/screenshots/1_3_1.png)
+![img](/screenshots/1_3_2.png)
+![img](/screenshots/1_3_3.png)
 ---
 
 4. Assign the users to appropriate groups.
@@ -78,8 +78,8 @@ Create a basic Microsoft Entra ID setup for an organization to manage identity a
    2. Add Users to the Admins Group:
       - Go to the Admins group and repeat the process to add the other user (e.g., User 2).
 
-![img](/Task_1/screenshots/1_4_1.png)
-![img](/Task_1/screenshots/1_4_2.png)
+![img](/screenshots/1_4_1.png)
+![img](/screenshots/1_4_2.png)
 ---
 
 5. Assign the Global Reader role to the Admins group.
@@ -87,14 +87,14 @@ Create a basic Microsoft Entra ID setup for an organization to manage identity a
     - On the main screen go to Azure subscription
     - In the left-hand menu, go to Access control (IAM).
     - Click + Add assignments.
-    - Search for apropriate role and select the Admins group.
+    - Search for an appropriate role and select the Admins group.
     - Click Add.
 
-![img](/Task_1/screenshots/1_5_1.png)
-![img](/Task_1/screenshots/1_5_2.png)
-![img](/Task_1/screenshots/1_5_3.png)
-![img](/Task_1/screenshots/1_5_4.png)
-![img](/Task_1/screenshots/1_5_5.png)
+![img](/screenshots/1_5_1.png)
+![img](/screenshots/1_5_2.png)
+![img](/screenshots/1_5_3.png)
+![img](/screenshots/1_5_4.png)
+![img](/screenshots/1_5_5.png)
 ---
 
 6. Assign the Application Developer role to the Developers group.
@@ -102,14 +102,14 @@ Create a basic Microsoft Entra ID setup for an organization to manage identity a
     - On the main screen go to Azure subscription
     - In the left-hand menu, go to Access control (IAM).
     - Click + Add assignments.
-    - Search for apropriate role and select the Developers group.
+    - Search for appropriate roles and select the Developers group.
     - Click Add.
 
-![img](/Task_1/screenshots/1_6_1.png)
-![img](/Task_1/screenshots/1_6_2.png)
-![img](/Task_1/screenshots/1_6_3.png)
-![img](/Task_1/screenshots/1_6_4.png)
-![img](/Task_1/screenshots/1_6_5.png)
+![img](/screenshots/1_6_1.png)
+![img](/screenshots/1_6_2.png)
+![img](/screenshots/1_6_3.png)
+![img](/screenshots/1_6_4.png)
+![img](/screenshots/1_6_5.png)
 ---
 
 7. Verify that the role assignments function as expected for both groups.
