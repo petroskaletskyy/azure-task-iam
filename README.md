@@ -183,9 +183,31 @@ Configure Single Sign-On (SSO) and Multi-Factor Authentication (MFA) for users i
 Implement Role-Based Access Control (RBAC) in Azure to manage access to resources based on roles and ensure fine-grained access management.
 
    1. Create a custom role named Resource Viewer with read-only permissions for a specific resource group.
+      - In the Azure portal, open a management group, subscription, or resource group where you want the custom role to be assignable and then open Access control (IAM)
+      - Click the Roles tab to see a list of all the built-in and custom roles.
+      - Search for a role you want to clone
+      - Add permission and resources you need, depricate some resources if needed
+
+![img](/screenshots/3_1_1.png)
+![img](/screenshots/3_1_2.png)
+![img](/screenshots/3_1_3.png)
+---
    2. Assign the Resource Viewer role to the Developers group created earlier.
+
+![img](/screenshots/3_2_1.png)
+![img](/screenshots/3_2_2.png)
+![img](/screenshots/3_2_3.png)
+---
    3. Assign the built-in Contributor role to the Admins group for the same resource group.
+
+![img](/screenshots/3_3_1.png)
+![img](/screenshots/3_3_2.png)
+![img](/screenshots/3_3_3.png)
+---
    4. Verify that members of the Developers group have only read access and members of the Admins group have full access to the resource group.
+
+![img](/screenshots/3_4_1.png)
+---
 
 ## Practical Task 4: Securing Sensitive Information with Azure Key Vault
 
