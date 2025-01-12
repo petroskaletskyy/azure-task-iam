@@ -240,9 +240,65 @@ Set up Azure Key Vault to securely store and manage sensitive information such a
 Define and assign Azure Policies to enforce compliance with organizational standards for resource management.
 
    1. Create an Azure Policy to enforce tagging for all newly created resources with a specific tag (e.g., Environment: Development).
+      - Select Definitions on the left side of the Azure Policy page.
+      - Click on + Policy definition.
+      - Fill in the required fields:
+      - Definition location: Select the subscription or management group.
+      - Name: Enter a name for the policy, e.g., “Enforce Tagging”.
+      - Description: Provide a description, e.g., “Enforces tagging for all newly created resources”.
+      - Category: Select or create a category.
+      - In the Policy rule section, enter the following JSON to enforce tagging
+         ```
+         {
+            "mode": "All",
+            "policyRule": {
+               "if": {
+                  "field": "tags['Environment']",
+                  "exist": "false"
+               },
+               "then": {
+                  "effect": "audit"
+               }
+            },
+            "parameters": {}
+         }
+         ```
+      - Click Save to create the policy.
+
+![img](/screenshots/5_1_1.png)
+![img](/screenshots/5_1_2.png)
+---  
+
    2. Assign the policy to a resource group.
+
+      - Click on + Assign policy.
+      - In the Basics tab, configure the following:
+      - Scope: Select the resource group where you want to enforce the policy.
+      - Policy definition: Select the policy definition you created in Step 1.
+      - Click Review + create and then Create.
+  
+![img](/screenshots/5_2_1.png)
+![img](/screenshots/5_2_2.png)
+---
+
    3. Verify that any new resource created in the resource group without the required tag is marked as non-compliant.
+   
+      - Navigate back to the Policy page.
+      - Select Compliance.
+      - Check if the newly created resource is marked as non-compliant.
+
+![img](/screenshots/5_3_1.png)
+![img](/screenshots/5_3_1.png)
+---
+
    4. Review and document the compliance status of the resource group.
+
+      - If we add tags to resources, compliance status will be change to compliant
+
+![img](/screenshots/5_4_1.png)
+![img](/screenshots/5_4_2.png)
+![img](/screenshots/5_4_3.png)
+---
 
 ## Practical Task 6: Using Policy Effects to Enforce Compliance
 
